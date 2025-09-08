@@ -11,7 +11,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx,css,md,json}\""
   },
   "dependencies": {
-    "@dhiwise/component-tagger": "^1.0.10",
+    "@dhiwise/component-tagger": "^1.0.3",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.2.0",

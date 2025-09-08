@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { isAuthenticated } = require('../middleware/authMiddleware'); // Import the new middleware
+
 const authController = require('../controllers/authController');
 // Register a new user
 // router.post('/login', async (req, res) => {
@@ -30,10 +30,5 @@ const authController = require('../controllers/authController');
 
 // User login
 router.post('/login', authController.loginUser);
-// User logout
-router.post('/logout', authController.logoutUser);
-// Check auth status (the new route)
-router.get('/me', isAuthenticated, authController.checkAuthStatus);
-
 
 module.exports = router;
